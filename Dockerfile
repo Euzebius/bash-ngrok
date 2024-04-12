@@ -17,4 +17,4 @@ RUN rm /tmp/peirates.tar.xz
 # cd p*
 # ./peirates
 # Leave container up instead of reverse shell as we have terminal exec rights
-CMD ["/usr/local/bin/bash"]
+CMD ["/bin/sh"]
